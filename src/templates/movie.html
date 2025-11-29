@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ movie.title }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ movie.title }}</h1>
+        
+        <div class="movie-details">
+            <p><strong>Movie ID:</strong> {{ movie.movieId }}</p>
+            <p><strong>Genres:</strong> {{ movie.genres }}</p>
+            <p><strong>Average Rating:</strong> {{ "%.2f"|format(movie.avg_rating) }}</p>
+            <p><strong>Total Ratings:</strong> {{ movie.rating_count }}</p>
+        </div>
+        
+        <h2>Sample Ratings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Rating</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for rating in sample_ratings %}
+                <tr>
+                    <td>{{ rating.userId }}</td>
+                    <td>{{ rating.rating }}</td>
+                    <td>{{ rating.timestamp }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <div class="buttons">
+            <a href="/" class="btn">Home</a>
+            <a href="/movies" class="btn">All Movies</a>
+            <a href="/recommend/{{ movie.movieId }}" class="btn">Get Recommendations</a>
+        </div>
+    </div>
+</body>
+</html>

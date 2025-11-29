@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MovieLens Explorer - Discover & Recommend Films</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MovieLens Explorer</h1>
+        <p class="subtitle">Discover movies, explore ratings, and get recommendations based on genre similarity</p>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <h2>{{ total_movies }}</h2>
+                <p>Total Movies</p>
+            </div>
+            <div class="stat-box">
+                <h2>{{ total_ratings }}</h2>
+                <p>Total Ratings</p>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <a href="/movies" class="btn">Browse Popular Movies</a>
+            <a href="/movie/1" class="btn">View Sample Movie</a>
+            <a href="/recommend/1" class="btn">Get Recommendations</a>
+        </div>
+    </div>
+</body>
+</html>
