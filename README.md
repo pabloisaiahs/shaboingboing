@@ -86,7 +86,7 @@ docker rm movielens-api
 `python tests/test_api.py`
 - tests the API endpoints to see if they are running responses with health checks
 
-## Running Tests
+### Running Tests
 
 Start the application:
 `./run.sh`
@@ -136,29 +136,28 @@ carolinsis/
 
 If you prefer to run the application directly on your machine without Docker:
 
-#### Prerequisites
+### Prerequisites
 
 - Python 3.9 or higher
 - pip package manager
 
-### Setup Virtual Environment
-
-# Create virtual environment
+## Setup Virtual Environment
+### Create virtual environment
 `python3.9 -m venv venv`
 
-# Activate virtual environment
-# On macOS/Linux:
+###  Activate virtual environment
+### On macOS/Linux:
 `source venv/bin/activate`
 
-## On Windows:
+### On Windows:
 `venv\Scripts\activate`
 
-## Install Dependencies
+###  Install Dependencies
 `pip install -r requirements.txt`
 
-## Run the Application
+### Run the Application
 `python src/app.py`
 
-## Deactivate Virtual Environment
+### Deactivate Virtual Environment
 When you're done:
 `deactivate`
