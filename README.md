@@ -46,8 +46,7 @@ The application follows a three-tier architecture:
 
 ### Quick Start (One Command)
 
-```bash
-./run.sh
+`./run.sh`
 
 ### This script will:
 
@@ -59,13 +58,13 @@ The application follows a three-tier architecture:
 
 ### Manual Docker Commands
 # Build the image
-docker build -t movielens-api:latest .
+`docker build -t movielens-api:latest .`
 
 # Run the container
-docker run -d --name movielens-api -p 5000:5000 movielens-api:latest
+`docker run -d --name movielens-api -p 5000:5000 movielens-api:latest`
 
 # Check if running
-curl http://localhost:5000/
+`curl http://localhost:5000/`
 
 ### Access the Application
 - Web Interface: http://localhost:5000
@@ -84,13 +83,13 @@ docker rm movielens-api
 ``
 
 # Tests
+`python tests/test_api.py`
+- tests the API endpoints to see if they are running responses with health checks
 
 ## Running Tests
 
 Start the application:
-```bash
-./run.sh
-
+`./run.sh`
 
 ## License
 
@@ -104,8 +103,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Citation
 
-If you use this project or the MovieLens dataset, please cite:
-
+TO-DO: PUT CITATION HERE
 
 ## Project Structure
 ``
@@ -134,23 +132,6 @@ carolinsis/
 ├── LICENSE # MIT License
 └── README.md # This file
 ``
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- MovieLens dataset provided by GroupLens Research
-- Course: DS 2022 - Systems I: Intro to Computing
-- University of Virginia School of Data Science
-
-## Citation
-
-If you use this project or the MovieLens dataset, please cite:
-
-
-
 ## Running Locally (Without Docker)
 
 If you prefer to run the application directly on your machine without Docker:
@@ -162,23 +143,22 @@ If you prefer to run the application directly on your machine without Docker:
 
 ### Setup Virtual Environment
 
-```bash
 # Create virtual environment
-python3 -m venv venv
+`python3.9 -m venv venv`
 
 # Activate virtual environment
 # On macOS/Linux:
-source venv/bin/activate
+`source venv/bin/activate`
 
 # On Windows:
-venv\Scripts\activate
+`venv\Scripts\activate`
 
 ## Install Dependencies
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## Run the Application
-python src/app.py
+`python src/app.py`
 
 ## Deactivate Virtual Environment
 When you're done:
-deactivate
+`deactivate`
