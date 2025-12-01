@@ -57,13 +57,13 @@ The application follows a three-tier architecture:
 5. Display access information
 
 ### Manual Docker Commands
-# Build the image
+## Build the image
 `docker build -t movielens-api:latest .`
 
-# Run the container
+## Run the container
 `docker run -d --name movielens-api -p 5000:5000 movielens-api:latest`
 
-# Check if running
+## Check if running
 `curl http://localhost:5000/`
 
 ### Access the Application
@@ -136,7 +136,7 @@ carolinsis/
 
 If you prefer to run the application directly on your machine without Docker:
 
-### Prerequisites
+#### Prerequisites
 
 - Python 3.9 or higher
 - pip package manager
@@ -150,7 +150,7 @@ If you prefer to run the application directly on your machine without Docker:
 # On macOS/Linux:
 `source venv/bin/activate`
 
-# On Windows:
+## On Windows:
 `venv\Scripts\activate`
 
 ## Install Dependencies
