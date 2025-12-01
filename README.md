@@ -106,7 +106,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 TO-DO: PUT CITATION HERE
 
 ## Project Structure
-``
+```
 carolinsis/
 ├── src/
 │ ├── app.py # Flask application and routes
@@ -131,7 +131,7 @@ carolinsis/
 ├── run.sh # One-command launcher
 ├── LICENSE # MIT License
 └── README.md # This file
-``
+```
 ## Running Locally (Without Docker)
 
 If you prefer to run the application directly on your machine without Docker:
